@@ -52,14 +52,21 @@ export default class App extends Component {
         console.log(`error ${err}`);
       });
   };
+  
 
   render() {
     return (
-      <div className="bg-dark container-fluid d-flex justify-content-center align-items-center" style={{
-        overflow: "hidden",
-        height: "100vh",
-      }}>
-        <div className="row text-center d-flex align-items-center" id="quote-box">
+      <div
+        className="bg-dark container-fluid d-flex justify-content-center align-items-center"
+        style={{
+          overflow: "hidden",
+          height: "100vh",
+        }}
+      >
+        <div
+          className="row text-center d-flex align-items-center"
+          id="quote-box"
+        >
           <Card style={{ width: "25rem" }}>
             <Card.Body>
               <Card.Title id="text">"{this.state.quote}"</Card.Title>
